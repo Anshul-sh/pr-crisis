@@ -59,7 +59,7 @@ def index():
         # process the analyze result and put it in the database.
         content = ''
         tone = ''
-        document_tone = original_result["document_tone"]['tones'][0]['tone_name']
+        #document_tone = original_result["document_tone"]['tones'][0]['tone_name']
         for r in original_result["sentences_tone"]:
             content += r["text"]
             for r2 in r["tones"]:
